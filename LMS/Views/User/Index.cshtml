@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AppLayout.cshtml";
+}
+<script src="~/AngularJs/AddUser/jsUserController.js"></script>
+<script src="~/AngularJs/AjsFactory/UserFactory.js"></script>
+
+
+
+<div ng-controller="UserController">
+<div class="row page-tilte align-items-center">
+    <div class="col-sm-6 col-sm offset-3">
+        <h1 class="weight-300 h3 title">Add User</h1>
+
+    </div>
+</div>
+<div class="col-md-6 col-md offset-3">
+    <div class="card mb-5">
+        <div class="card-body">
+            <form class="formx" name="form" ng-submit="submitForm()">
+
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <label for="inputusername">User Name</label>
+                        <input type="text" class="form-control" placeholder="Enter User Name" ng-model="form.username" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputusername">Password</label>
+                        <input type="password" class="form-control" placeholder="Enter Password" ng-model="form.password" required>
+                    </div>
+                </div>
+                <br /><br /> <br /><br />
+                                   <div class="form-row">
+                                       <div class="col-md-6">
+                                           <label for="inputfirstname"> First Name</label>
+                                           <input type="text" class="form-control" placeholder="Enter First Name" ng-model="form.firstname" required>
+                                       </div>
+
+                                       <div class="col-md-6">
+                                           <label for="inputlastname">Last Name</label>
+                                           <input type="text" class="form-control" placeholder="Enter Last Name" ng-model="form.lastname">
+                                       </div>
+
+                                       <br /><br /> <br /><br /> 
+                                       <div class="col-md-6">
+                                           <label for="inputmobileno">Mobile No</label>
+                                           <input type="number" class="form-control" placeholder="Enter Mobile No." ng-model="form.mobileno" ng-maxlength="10" required>
+                                       </div>
+                                       <div class="col-md-6">
+                                           <label for="inputemialid">Email Id</label>
+                                           <input type="email" class="form-control" placeholder="Enter Email Id" ng-model="form.emailid" required />
+                                       </div>
+                                   </div>
+                <br />
+                <br />
+                <br /><br />
+                      <div class="checkbox" style="margin-left:-20px;padding-left:-20px">
+                          <div class="col-md-4 ">
+                              <label for="isactive">
+                                  
+                                  <input type="checkbox" class="form-control" ng-model="form.isactive"> Is Active
+                              </label>
+
+                          </div>
+                      </div>
+                      @*<div class="ckbox ckbox-default mr10 inline-block">
+                          &nbsp;&nbsp;
+                          <label for="isactive"> Is Active</label>
+                          <input type="checkbox"     ng-model="form.isactive">
+                      </div>*@
+
+              
+                <br /><br />
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+             </div>
+
+
+        </div>
+    </div>
+</div>

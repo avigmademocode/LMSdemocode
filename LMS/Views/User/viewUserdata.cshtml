@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "viewUserdata";
+    Layout = "~/Views/Shared/AppLayout.cshtml";
+}
+<script src="~/AngularJs/AddUser/jsViewUserController.js"></script>
+<script src="~/AngularJs/AjsFactory/UserFactory.js"></script>
+
+
+<div ng-controller="UserController">
+    <div class="col-md-12">
+        <h3>User Details</h3>
+        <label>Search User Name:</label>
+
+        <input id='filter' class='k-textbox' />
+        <br /><br />
+
+        <div id="grid" class="k-content">
+        </div>
+    </div>
+</div>

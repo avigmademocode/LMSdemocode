@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AppLayout.cshtml";
+}
+<script src="~/AngularJs/AddProgram/jsProgramController.js"></script>
+<script src="~/AngularJs/AjsFactory/UserFactory.js"></script>
+
+
+<div ng-controller="ProgramController">
+    <div class="content">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Add Program</h4>
+                <div class="container">
+                    <form class="form" ng-submit="addProgam()">
+
+                        <div class="form-row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Status Id </label>
+                                    @*<input class="form-control" type="number" ng-model="form.statusId" required />*@
+
+                                    <select class="form-control" ng-model="form.statusId" ng-options="item.statusId as item.StatusName for item in statuslst">
+                                        <option value="">Select Status</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-md-2">
+                                <label>Time Frame </label>
+
+                                <input class="form-control" type="date" ng-model="form.TimeFrame" required />
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Activity</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" ng-model="form.activity" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Facilitation</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" ng-model="form.facilitation" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>User Name Credits Id</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" ng-model="form.UserNameCreditsId" required>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Fundamental Info</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" ng-model="form.fundamentalInfo" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>No Of Days</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="number" ng-model="form.noOfDays" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+       
+    </div>
+    {{statuslst}}
+</div>

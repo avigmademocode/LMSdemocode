@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "view";
+    Layout = "~/Views/Shared/AppLayout.cshtml";
+}
+
+<script src="~/AngularJs/AddSite/jsViewController.js"></script>
+<script src="~/AngularJs/AjsFactory/UserFactory.js"></script>
+
+
+
+<div ng-controller="SiteController">
+
+    <div class="col-md-12">
+        <h1>View Site Details</h1>
+        <label>Search Site Details : </label>
+
+        <input id='filter' class='k-textbox'>
+        <br/>
+        <br/>
+        <div id="grid" class="k-content">
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "ViewProgram";
+    Layout = "~/Views/Shared/AppLayout.cshtml";
+}
+
+<script src="~/AngularJs/AddProgram/jsViewProgramController.js"></script>
+<script src="~/AngularJs/AjsFactory/UserFactory.js"></script>
+
+
+
+<div ng-controller="ProgramController">
+    <div class="col-md-12">
+        <h3>Program Details</h3>
+        <label>Search Program : </label>
+        <input id='filter' class='k-textbox'>
+        <br />
+        <br />
+        <div id="grid" class="k-content">
+        </div>
+
+    </div>
+
+</div>
+
+
+
+

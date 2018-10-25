@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Admin</title>
+
+    <link href="~/Scripts/temp/css/morris.css" rel="stylesheet">
+    <link href="~/Scripts/temp/css/select2.css" rel="stylesheet" />
+    <link href="~/Scripts/temp/css/style.default.css" rel="stylesheet" />
+
+
+    <!--kendo css-->
+    <link href="~/Scripts/temp/css/kendo/2012.3.1114/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/Scripts/temp/css/kendo/2012.3.1114/kendo.metro.min.css" rel="stylesheet" />
+
+    <script src="~/AngularJs/angular.min.js"></script>
+    <script src="~/AngularJs/angucomplete-alt.min.js"></script>
+
+    <script src="~/AngularJs/HomeApp.js"></script>
+
+
+    <script src="~/Scripts/temp/js/jquery-1.11.1.min.js"></script>
+
+    <script src="~/Scripts/temp/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="~/Scripts/temp/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/temp/js/modernizr.min.js"></script>
+    <script src="~/Scripts/temp/js/pace.min.js"></script>
+    <script src="~/Scripts/temp/js/retina.min.js"></script>
+    <script src="~/Scripts/temp/js/jquery.cookies.js"></script>
+
+    <script src="~/Scripts/temp/js/flot/jquery.flot.min.js"></script>
+    <script src="~/Scripts/temp/js/flot/jquery.flot.resize.min.js"></script>
+    <script src="~/Scripts/temp/js/flot/jquery.flot.pie.min.js"></script>
+    <script src="~/Scripts/temp/js/flot/jquery.flot.spline.min.js"></script>
+
+    <script src="~/Scripts/temp/js/jquery.sparkline.min.js"></script>
+    <script src="~/Scripts/temp/js/morris.min.js"></script>
+    <script src="~/Scripts/temp/js/raphael-2.1.0.min.js"></script>
+    <script src="~/Scripts/temp/js/bootstrap-wizard.min.js"></script>
+
+
+    <script src="~/Scripts/temp/js/select2.min.js"></script>
+    <script src="~/Scripts/temp/js/custom.js"></script>
+
+    <script src="~/Scripts/temp/js/dashboard.js"></script>
+
+
+    @*<script src="~/AngularJs/jsConfig.js"></script>*@
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body ng-app="HomeApp">
+
+    <header>
+        @Html.Partial("TopMenuBar")
+    </header>
+
+    <section>
+        <div class="mainwrapper">
+
+            @Html.Partial("LeftMenu")
+
+
+
+
+
+            <div class="mainpanel">
+                <div class="pageheader">
+                    <div class="media">
+                        <div class="pageicon pull-left">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="media-body">
+                            <ul class="breadcrumb">
+                                <li><a href="#"><i class="glyphicon glyphicon-home"></i></a></li>
+                                <li>Dashboard</li>
+                            </ul>
+                            <h4>Dashboard</h4>
+                        </div>
+                    </div><!-- media -->
+                </div><!-- pageheader -->
+
+
+
+                <div class="contentpanel">
+
+                    @RenderBody()
+
+                    <div class="row row-stat">
+                        <div class="col-md-4">
+                            <div class="panel panel-success-alt noborder">
+
+                            </div><!-- panel -->
+                        </div><!-- col-md-4 -->
+
+                        <div class="col-md-4">
+                            <div class="panel panel-primary noborder">
+
+                            </div><!-- panel -->
+                        </div><!-- col-md-4 -->
+
+                        <div class="col-md-4">
+
+                        </div><!-- col-md-4 -->
+                    </div><!-- row -->
+
+
+
+
+
+                </div><!-- contentpanel -->
+
+            </div><!-- mainpanel -->
+        </div><!-- mainwrapper -->
+    </section>
+
+
+
+
+
+</body>
+<!-- kendo-->
+<script src="~/Scripts/kendo/2012.3.1114/kendo.web.min.js"></script>
+</html>
