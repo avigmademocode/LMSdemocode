@@ -183,6 +183,7 @@
     <Compile Include="Repository\Lib\MyDataSourceFactory.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularJs\AddProgram\demo.js" />
     <Content Include="AngularJs\AddProgram\jsProgramController.js" />
     <Content Include="AngularJs\AddProgram\jsViewProgramController.js" />
     <Content Include="AngularJs\AddSite\jsSiteController.js" />
